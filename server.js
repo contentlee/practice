@@ -12,6 +12,6 @@ app.get('/', function(req, res){
   res.sendFile(__dirname+'/index.html');
 });
 
-app.get('/scroll1', function(req, res){
-  res.render('./scroll.html')
+app.get('/bgImg', function(req, res){
+  res.render('bgattachment.html')
 })

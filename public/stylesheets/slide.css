@@ -1,0 +1,98 @@
+@import url(./base.css);
+
+section{
+  overflow: hidden;
+}
+.slide1{
+  position: relative;
+  height: 75vh;
+  width: 100%;
+}
+.slide1>img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: all .2s ease-in-out;
+}
+.arrow1{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+}
+.arrow1>.material-icons{
+  cursor: pointer;
+  position: absolute;
+  color: #fff;
+  top: 50%;
+  padding: 10px;
+}
+.arrow1>.material-icons.back{
+  left: 10px;
+}
+.arrow1>.material-icons.forward{
+  right: 10px;
+}
+.arrow1>.material-icons:hover{
+  background-color: rgba(0, 0, 0, .4);
+  border-radius: 50px;
+  
+}
+
+
+
+
+/* slide2 */
+.slide2{
+  position: relative;
+  height: 75vh;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img-box{
+  position: relative;
+  width: 80%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+}
+.img-box>img{
+  position: absolute;
+  display: inline-block;
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  transition: all .2s;
+  backface-visibility: hidden;
+}
+.arrow2{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+}
+.arrow2>.material-icons{
+  cursor: pointer;
+  position: absolute;
+  color: #000;
+  top: 50%;
+  padding: 10px;
+  opacity: 0.2;
+  transition: all .2s;
+}
+.arrow2>.material-icons.back{
+  left: 10px;
+}
+.arrow2>.material-icons.forward{
+  right: 10px;
+}
+.arrow2>.material-icons:hover{
+  opacity: 1;
+}

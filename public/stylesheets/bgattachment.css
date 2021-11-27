@@ -1,0 +1,73 @@
+@import url(./base.css);
+
+section{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.box{
+  text-align: center;
+  color: #fff;
+}
+h5{
+  margin: 10px 0;
+}
+p{
+  margin: 15px 0;
+}
+button{
+  cursor: pointer;
+  padding: 12px 52px;
+  border: 1px solid #fff;
+  background-color: transparent;
+  color: #fff;
+  transition: all .3s;
+}
+button:hover{
+  color: #000;
+  background-color: #fff;
+}
+
+.section1{
+  background-image: url(https://cdn.pixabay.com/photo/2021/11/16/08/13/window-6800397_1280.jpg);
+}
+.section2{
+  background-image: url(https://cdn.pixabay.com/photo/2021/01/09/14/04/australian-shepherd-5902421_1280.jpg);
+}
+.section3{
+  background-image: url(https://cdn.pixabay.com/photo/2020/05/08/15/39/new-york-5146247_1280.jpg);
+}
+.section4{
+  background-image: url(https://cdn.pixabay.com/photo/2021/11/15/05/52/red-fox-6796430_1280.jpg);
+}
+
+.palette{
+  position: fixed;
+  right: 20px;
+  top: 120px;
+  cursor: pointer;
+}
+aside{
+  position: fixed;
+  right: 20px;
+  top: 150px;
+  background-color: #fff;
+  transform: translateX(700px);
+  transition: all .3s;
+}
+aside>div{
+  margin: 10px 10px;
+  color: #000;
+  font-size: 12px;
+  text-align: right;
+}
+aside>div>button{
+  color: #000;
+  padding: 10px 10px;
+  font-size: 10px;
+}

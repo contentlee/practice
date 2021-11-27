@@ -1,0 +1,21 @@
+html{
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nanum Myeongjo', serif;
+  width: 100%;
+  height: 100%;
+}
+header, span, div, a, input, canvas, h5, h1, p, img{
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+

@@ -1,0 +1,77 @@
+@import url(./base.css);
+
+
+.material-icons{
+  position: relative;
+}
+
+header{
+  position: fixed;
+  padding: 0 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1900px;
+  min-width: 1024px;
+  min-height: 100px;
+}
+
+.nav-btn{
+  cursor: pointer;
+}
+
+.fun-theme{
+  display: inline;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  padding: 10px 20px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px gray;
+}
+
+.fun-theme>p{
+  vertical-align: text-top;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end:0;
+  font-family: 'Gugi', cursive;
+  color: #000;
+  font-size: 24px;
+}
+
+.search{
+  position: relative;
+}
+.search>input{
+  position: absolute;
+  top: -7px;
+  right: 0;
+  width: 0;
+  padding: 12px;
+  padding-right: 26px;
+  border: 1px solid #000;
+  border-radius: 40px;
+  transition: all .5s;
+}
+.search:hover>input{
+  width: 200px;
+}
+.search>input:focus{
+  width: 200px;
+}
+.search>span{
+  padding-right: 7px;
+}
+
+
+canvas{
+  width: 100%;
+  height: 100%;
+}

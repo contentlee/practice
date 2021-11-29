@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>재밌는 놀이</title>
-  <link rel="stylesheet" href="../public/stylesheets/main.css">
+  <link rel="stylesheet" href="./public/stylesheets/main.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,10 +26,10 @@
   </header>
 
   <nav>
-    <span class="material-icons">highlight_off</span>
-    <h3>Category</h3>
+    <span class="material-icons close">highlight_off</span>
+    <h2>Category</h2>
     <ul>
-      <li> CSS Animation
+      <li class="li-title"> CSS Animation
         <ul>
           <li>
             <a href="/bgImg">background-attachment</a>
@@ -37,8 +37,16 @@
         </ul>
       </li>
 
-      <li>
+      <li class="li-title">
         JavaScript Animation
+        <ul>
+          <li>
+            <a href="/popup">Popup style</a>
+          </li>
+          <li>
+            <a href="/carousel">Carousel</a>
+          </li>
+        </ul>
       </li>
       
     </ul>
@@ -50,7 +58,7 @@
   <main>
 
   </main>
-  
-  <script src="../public/javascripts/main.js" type="module"></script>
+  <script src="./public/javascripts/main.js"></script>
+  <script src="./public/javascripts/canvas.js" type="module"></script>
 </body>
 </html>

@@ -43,7 +43,7 @@ window.onload = ()=>{
 
 
 let Popup1 = ()=>{
-  let popup = new makingPopUp('Fun POPUP', 'I want to be a professional programmer', 'Click but notiong', 'btn-black');
+  let popup = new makingPopUp('Fun POPUP', 'I want to be a professional programmer', 'Click but nothing', 'btn-black');
 
   const btn = document.querySelector('.btn1');
   let container = popup.container
@@ -62,7 +62,7 @@ Popup1();
 
 
 let Popup2 = ()=>{
-  let popup = new makingPopUp('Fun POPUP', 'I want to be a professional programmer', 'Click but notiong', 'btn-wht');
+  let popup = new makingPopUp('Fun POPUP', 'I want to be a professional programmer', 'Click but nothing', 'btn-wht');
   const btn = document.querySelector('.btn2');
   let container = popup.container
   let close = popup.icon
@@ -82,11 +82,7 @@ let Popup2 = ()=>{
 
 Popup2();
 
-
-function logKey(e) {
-}
-
-let Btn = ()=>{
+let Btn3 = ()=>{
   const btn = document.querySelector('.btn3');
   
 
@@ -100,19 +96,61 @@ let Btn = ()=>{
     let currentY = e.clientY;
 
 
-    let rotateX = ((30/btnWidth)*currentX)-15-((30*startX)/btnWidth);
-    let rotateY = (-(30/btnHeight)*currentY)+15+((30*startY)/btnHeight);
+    let rotateX = ((40/btnWidth)*currentX)-20-((40*startX)/btnWidth);
+    let rotateY = (-(40/btnHeight)*currentY)+20+((40*startY)/btnHeight);
 
-    btn.style.transform = `rotateY(${rotateX}deg) rotateX(${rotateY}deg)`
+    btn.style.transform = `scale(1.5) rotateY(${rotateX}deg) rotateX(${rotateY}deg)`
   });
   btn.addEventListener('mouseleave', ()=>{
-    btn.style.transform = 'rotateX(0) rotateY(0)'
+    btn.style.transform = 'scale(1) rotateX(0) rotateY(0)'
   })
   
 }
-Btn()
+Btn3()
 
 
 let Popup3 = ()=>{
-  let popup = new makingPopUp('Fun POPUP', 'I want to be a professional programmer', 'Click but notiong', 'btn-yellow');
+  let popup = new makingPopUp('Fun POPUP', 'I want to be a professional programmer', 'Click but nothing', 'btn-yellow');
+  const btn = document.querySelector('.btn3');
+  let container = popup.container
+  let inner = popup.popup
+  let close = popup.icon
+
+  container.style.backgroundColor = '#FFE400';
+  container.style.display = 'none';
+  container.style.opacity = '0'
+
+  btn.addEventListener('click', ()=>{
+    container.style.display = 'flex';
+    inner.className = 'popup popup3';
+    setTimeout(()=>{container.style.opacity = '1'},20);
+  })
+  close.addEventListener('click', ()=>{
+    container.style.opacity = '0';
+    setTimeout(()=>{container.style.display = 'none'},500);
+  })
 }
+Popup3();
+
+let Popup4 = ()=>{
+  let popup = new makingPopUp('Fun POPUP', 'I want to be a professional programmer', 'Click but nothing', 'btn-orange btn4');
+  const btn = document.querySelector('.btn4');
+  let container = popup.container;
+
+  let close = popup.icon;
+
+  container.style.backgroundColor = '#FFBB00';
+  container.style.display = 'none';
+  container.style.opacity = '0';
+
+  btn.addEventListener('click', ()=>{
+    container.style.display = 'flex';
+    container.className = 'container popup4';
+    setTimeout(()=>{container.style.opacity = '1'},20);
+  })
+  close.addEventListener('click', ()=>{
+    container.style.opacity = '0';
+    setTimeout(()=>{container.style.display = 'none'},500);
+  })
+}
+Popup4();

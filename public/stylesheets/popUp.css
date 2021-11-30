@@ -89,6 +89,7 @@ button{
   align-items: center;
   border-radius: 10px;
   padding: 20px;
+  transition: all ease-in-out;
 }
 
 .contents{
@@ -102,3 +103,124 @@ button{
   right: 20px;
 }
 
+
+.popup3:hover{
+  animation-name: popup3;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+@keyframes popup3{
+  0%{
+    transform: scale(1);
+  }
+  25%{
+    transform: scale(.7);
+  }
+  50%{
+    transform: scale(1.4);
+  }
+  95%{
+    transform: scale(.9);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+.btn4:hover{
+  animation-name: btn4;
+  animation-duration: .5s;
+}
+
+@keyframes btn4{
+  0%{
+    background-color: #FFBB00;
+    border-color: #FFBB00;
+    transform: scale(1);
+  }
+  10%{
+    background-color: #F15F5F;
+    border-color: #F15F5F;
+  }
+  20%{
+    background-color: #FFE08C;
+    border-color: #FFE08C;
+  }
+  30%{
+    background-color: #2F9D27;
+    border-color: #2F9D27;
+  }
+  40%{
+    background-color: #CCA63D;
+    border-color: #CCA63D;
+  }
+  50%{
+    background-color: #D9418C;
+    border-color: #D9418C;
+    transform: scale(1.3);
+  }
+  60%{
+    background-color: #3F0099;
+    border-color: #3F0099;
+  }
+  70%{
+    background-color: #A566FF;
+    border-color: #A566FF;
+  }
+  80%{
+    background-color: #D1B2FF;
+    border-color: #D1B2FF;
+    transform: scale(1);
+  }
+  90%{
+    background-color: #E8D9FF;
+    border-color: #E8D9FF;
+  }
+  100%{
+    background-color: #FFBB00;
+    border-color: #FFBB00;
+  }
+}
+
+.popup4{
+  animation-name: popup4;
+  animation-duration: .5s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+}
+
+@keyframes popup4{
+  0%{
+    background-color: #FFBB00;
+  }
+  10%{
+    background-color: #F15F5F;
+  }
+  20%{
+    background-color: #FFE08C;
+  }
+  30%{
+    background-color: #2F9D27;
+  }
+  40%{
+    background-color: #CCA63D;
+  }
+  50%{
+    background-color: #D9418C;
+  }
+  60%{
+    background-color: #3F0099;
+  }
+  70%{
+    background-color: #A566FF;
+  }
+  80%{
+    background-color: #D1B2FF;
+  }
+  90%{
+    background-color: #E8D9FF;
+  }
+  100%{
+    background-color: #FFBB00;
+  }
+}

@@ -13,11 +13,11 @@ app.get('/', function(req, res){
 });
 
 app.get('/bgImg', function(req, res){
-  res.sendFile(__dirname+'/bgattachment.html')
+  res.render(__dirname+'./bgattachment.html')
 })
 app.get('/popup', function(req, res){
-  res.sendFile(__dirname+'/popUp.html')
+  res.render(__dirname+'./popUp.html')
 })
 app.get('/carousel', function(req, res){
-  res.sendFile(__dirname+'/slide.html')
+  res.render(__dirname+'./slide.html')
 })
